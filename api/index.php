@@ -5,5 +5,5 @@ $row  =  $resultado->fetchAll(PDO::FETCH_ASSOC);
 $row   =  json_encode($row);
 header("Content-Type: application/json");
 echo $row;
-
+print($row)
 ?>
