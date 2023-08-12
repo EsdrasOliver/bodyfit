@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Requisição Fetch</title>
 </head>
 <body>
-    
-<div>
 
-</div>
+<div id="result"></div>
+
+<script>
+    function fetchAndDisplayData() {
+        fetch('./api/index.php') // Caminho correto para o seu script PHP
+            .then(response => response.json())
+            .then(data => {
+                // Processa os dados recebidos e exibe no elemento HTML
+                const resultDiv = document.getElementById('result');
+                data.forEach(item => {
+                    resultDiv.innerHTML += `ID: ${item.id}<br>`;
+                    resultDiv.innerHTML += `Nome: ${item.nome}<br>`;
+                    resultDiv.innerHTML += `Carro: ${item.carro}<br>`;
+                    resultDiv.innerHTML += '-----------------------<br>';
+                    
+                });
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+            });
+    }
+
+    // Chama a função para buscar e exibir os dados
+    fetchAndDisplayData();
+</script>
+
 </body>
 </html>
