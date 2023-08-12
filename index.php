@@ -8,5 +8,14 @@
 </head>
 <body>
     
+<div>
+<?php
+    $nomes = array("Mateus", "Jhonnata", "Edras", "Caio");
+
+    foreach ($nomes as $nome) {
+        echo "<li>$nome</li>";
+    }
+    ?>
+</div>
 </body>
 </html>
