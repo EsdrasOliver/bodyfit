@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Acafits</h1>
+    </header>
+    <nav>
+        <a href="index.html">Página inicial</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contatos</a>
+    </nav>
 </body>
 </html>
