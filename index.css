@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo:  #fcf49e;  
+    --cor-titulos:  #FCEA21; 
+    --cor-header:  #B0A20B; 
+    --cor-mouse: #5B21FC;  
+    --cor-strong:  #f5ed99; 
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: var(--cor-header);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+header h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 3em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    background-color: var(--cor-header); 
+    margin-top: 100px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-strong); 
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+nav a:hover {
+    color: var(--cor-mouse);
+    background-color: var(--cor-strong);
+    border-radius: 5px;
+}
+
+main {
+    min-width: 400px;
+    max-width: 1000px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: #fff;
+    margin: 0px auto 60px auto; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+}
+
+main div {
+    padding: auto;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+main div h2 {
+    color: var(--cor-mouse);
+    text-shadow: 1px 1px 1px var(--cor-titulos); 
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+ul li {
+    line-height: 30px;
+    font-size: 1em;
+}
+
+#ancora {
+    text-decoration: none;
+    margin-right: 40px;
+    color: #1A5C37;
+}
+
+main div p {
+    text-align: justify;
+    line-height: 1.8em;
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+} 
+  
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--cor-header);
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+}
